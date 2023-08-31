@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: Bot AI
+  m_EditorClassIdentifier: 
+  mBehaviorSource:
+    behaviorName: Behavior
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(-11486.3213,-10398.5986)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(0,118.63636)"},"ID":1,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(-1.07324219,111.8822)"},"ID":2,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-664.638245,211.378342)","Comment":"Is
+        Killed\n"},"ID":3,"Name":"Sequence","Instant":true,"AbortTypeabortType":"LowerPriority","Children":[{"Type":"_GAME.Code.Logic.Character.Behaviors.Conditions.CheckIsCharacterKilledCondition","NodeData":{"Offset":"(-88.04619,171.1836)"},"ID":4,"Name":"Check
+        Is Character Killed Condition","Instant":true},{"Type":"_GAME.Code.Logic.Character.Behaviors.Actions.EnemyKilledAction","NodeData":{"Offset":"(101.953812,171.1836)"},"ID":5,"Name":"Enemy
+        Killed Action","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Parallel","NodeData":{"Offset":"(503.4596,227.7699)"},"ID":6,"Name":"Parallel","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(-573.0954,181.539063)","Comment":"Movement\n"},"ID":7,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(-5.203417,160.91095)"},"ID":8,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-580,240)"},"ID":9,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"_GAME.Code.Logic.Character.Behaviors.Conditions.Bot_AI.CheckCanStartStrafeCondition","NodeData":{"Offset":"(-115.251717,164.4414)"},"ID":10,"Name":"Check
+        Can Start Strafe Condition","Instant":true},{"Type":"_GAME.Code.Logic.Character.Behaviors.Actions.Bot_AI.SetRandomStrafePoint","NodeData":{"Offset":"(84.5527649,158.45015)"},"ID":11,"Name":"Set
+        Random Strafe Point","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(4.357855,228.518539)"},"ID":12,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"_GAME.Code.Logic.Character.Behaviors.Conditions.Bot_AI.CheckCanMoveToTargetCondition","NodeData":{"Offset":"(-125.66349,187.211121)"},"ID":13,"Name":"Check
+        Can Move To Target Condition","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(100.088959,193.119476)"},"ID":14,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-194.166687,130)"},"ID":15,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"_GAME.Code.Logic.Character.Behaviors.Conditions.Bot_AI.CheckIfAimTargetOnAttackRange","NodeData":{"Offset":"(-296.816528,146.367188)"},"ID":16,"Name":"Check
+        If Aim Target On Attack Range","Instant":true},{"Type":"_GAME.Code.Logic.Character.Behaviors.Conditions.Bot_AI.CheckIsStrafingCondition","NodeData":{"Offset":"(-87.1456,147.7305)"},"ID":17,"Name":"Check
+        Is Strafing Condition","Instant":true},{"Type":"_GAME.Code.Logic.Character.Behaviors.Actions.Bot_AI.MoveToTargetAction","NodeData":{"Offset":"(89.42448,151.254883)"},"ID":18,"Name":"Move
+        To Target Action","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(218.80365,162.313049)"},"ID":19,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"_GAME.Code.Logic.Character.Behaviors.Actions.Bot_AI.SetMoveToTargetPosToPlayerPosAction","NodeData":{"Offset":"(-114.873047,120)"},"ID":20,"Name":"Set
+        Move To Target Pos To Player Pos Action","Instant":true},{"Type":"_GAME.Code.Logic.Character.Behaviors.Actions.Bot_AI.ResetStrafeAction","NodeData":{"Offset":"(83.4540253,115.112305)"},"ID":21,"Name":"Reset
+        Strafe Action","Instant":true},{"Type":"_GAME.Code.Logic.Character.Behaviors.Actions.Bot_AI.MoveToTargetAction","NodeData":{"Offset":"(235.955322,120)"},"ID":22,"Name":"Move
+        To Target Action","Instant":true}]}]}]},{"Type":"_GAME.Code.Logic.Character.Behaviors.Actions.Bot_AI.SetMoveToTargetPosToPlayerPosAction","NodeData":{"Offset":"(377.3459,422.7627)"},"ID":23,"Name":"Set
+        Move To Target Pos To Player Pos Action","Instant":true}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(-4.09118271,173.589859)","Comment":"Shooting\n"},"ID":24,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-3.81469727E-06,110)"},"ID":25,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"_GAME.Code.Logic.Character.Behaviors.Conditions.Bot_AI.CheckIfTargetPlayerOnRange","NodeData":{"Offset":"(-228.694366,134.306671)"},"ID":26,"Name":"Check
+        If Target Player On Range","Instant":true},{"Type":"_GAME.Code.Logic.Character.Behaviors.Conditions.Bot_AI.CheckIsAimTargetNotBlockingCondition","NodeData":{"Offset":"(5.225093,134.3721)"},"ID":27,"Name":"Check
+        Is Aim Target Not Blocking Condition","Instant":true},{"Type":"_GAME.Code.Logic.Character.Behaviors.Actions.Bot_AI.EnemyShootAction","NodeData":{"Offset":"(214.8694,127.231453)"},"ID":28,"Name":"Enemy
+        Shoot Action","Instant":true},{"Type":"BehaviorDesigner.Runtime.Tasks.Wait","NodeData":{"Offset":"(338.387573,132.745789)"},"ID":29,"Name":"Wait","Instant":true,"SharedFloatwaitTime":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"ShootDelay","IsShared":true,"SinglemValue":0},"SharedBoolrandomWait":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"SharedFloatrandomWaitMin":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1},"SharedFloatrandomWaitMax":{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":null,"SinglemValue":1}}]}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(753.630432,207.398682)","Comment":"Aim\n"},"ID":30,"Name":"Repeater","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":0},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(0.9736328,122.016594)"},"ID":31,"Name":"Selector","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-316.111725,181.805222)"},"ID":32,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Inverter","NodeData":{"Offset":"(-123.264137,137.709961)"},"ID":33,"Name":"Inverter","Instant":true,"Children":[{"Type":"_GAME.Code.Logic.Character.Behaviors.Conditions.Bot_AI.CheckIfAimTargetOnAttackRange","NodeData":{"Offset":"(0,100)"},"ID":34,"Name":"Check
+        If Aim Target On Attack Range","Instant":true}]},{"Type":"_GAME.Code.Logic.Character.Behaviors.Actions.Bot_AI.SetAimTargetPosToIdlePos","NodeData":{"Offset":"(51.2517242,144.750717)"},"ID":35,"Name":"Set
+        Aim Target Pos To Idle Pos","Instant":true},{"Type":"_GAME.Code.Logic.Character.Behaviors.Actions.Bot_AI.TurnOnAiRotationAction","NodeData":{"Offset":"(248.574219,144.730469)"},"ID":36,"Name":"Turn
+        On Ai Rotation Action","Instant":true},{"Type":"_GAME.Code.Logic.Character.Behaviors.Actions.Bot_AI.AimToTargetAction","NodeData":{"Offset":"(410.3382,138.0954)"},"ID":37,"Name":"Aim
+        To Target Action","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(359.375977,205.647583)"},"ID":38,"Name":"Sequence","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"_GAME.Code.Logic.Character.Behaviors.Conditions.Bot_AI.CheckHaveAimTargetCondition","NodeData":{"Offset":"(-80.6607742,111.392578)"},"ID":39,"Name":"Check
+        Have Aim Target Condition","Instant":true},{"Type":"_GAME.Code.Logic.Character.Behaviors.Actions.Bot_AI.TurnOffAiRotationAction","NodeData":{"Offset":"(143.572266,114.735352)"},"ID":40,"Name":"Turn
+        Off Ai Rotation Action","Instant":true},{"Type":"_GAME.Code.Logic.Character.Behaviors.Actions.Bot_AI.AimToTargetAction","NodeData":{"Offset":"(335.145172,107.430511)"},"ID":41,"Name":"Aim
+        To Target Action","Instant":true}]}]}]}]}]}]},"Variables":[{"Type":"BehaviorDesigner.Runtime.SharedFloat","Name":"ShootDelay","IsShared":true,"SinglemValue":0}]}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.4
